@@ -2,22 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<title>View All Student</title>
-		<div th:fragment="links"> 
-			<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"></link>
-			<link rel="stylesheet" type="text/css" href="../js/datatables.min.css"></link>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        	<link rel="stylesheet" type="text/css" href="/css/datatables.min.css"/>
-   			<script type="text/javascript" src="/js/datatables.min.js"></script>
-			<link rel="stylesheet" type="text/css" href="../js/datatables.css"></link>
-			
-			<script>
-				$(document).ready( function () {
-	    			$('#table_id').DataTable();
-				} );
-			</script>
-			<script type="text/javascript" charset="utf8" src="../js/datatables.min.js"></script>
-			<script type="text/javascript" charset="utf8" src="../js/datatables.js"></script>
-		</div>
+		<div th:replace="fragments/fragment :: links"></div>
 	</head>
 	<body>
 		<div th:replace="fragments/fragment :: header"></div>
